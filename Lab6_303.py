@@ -2,6 +2,9 @@ import random
 from scipy.stats import f, t
 from prettytable import PrettyTable
 import numpy as np
+import time
+#вивести час роботи  всієї програми 
+start_time = time.time()
 
 for_task = ()
 #303
@@ -216,4 +219,4 @@ for g in range(100):
     else:
         print("Дисперсія  неоднорідна")
 
-
+print("Час виконання програми --- %s секунди ---" % (time.time() - start_time))
